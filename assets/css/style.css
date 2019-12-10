@@ -263,7 +263,7 @@ Stats
 }
 
 #stats-head {
-    border: 0.1vh solid black;
+    /* border: 0.1vh solid black; */
     text-align: center;
 }
 
@@ -293,10 +293,11 @@ Stats
 
 
 #stats-body1 {
-    border: 0.1vh solid rgb(73, 0, 0);
+    /* border: 0.1vh solid rgb(73, 0, 0); */
     width: 77%;
-    position: absolute;
-    right: 0;
+    /* position: absolute;
+    right: 0; */
+    margin-left: 75px;
     font-family: 'Roboto-Bold';
     font-size: 15px;
 }
@@ -321,13 +322,15 @@ Stats
 }
 
 .stats-card {
-    width: 200px;
+    width: 250px;
     display: inline-block;
     font-family: 'Roboto-Bold';
     background-color: white;
     border: none;
     border-radius: 5px;
+    padding-bottom: 10px;
     /* padding: 10px; */
+    margin: 5px 7px;
 }
 
 .stats-card-head {
@@ -337,33 +340,199 @@ Stats
     padding: 10px 0;
 }
 
-.stats-card-img {
+.stats-card-body {
+    display:inline-block;
+}
 
+.stats-card-img {
+    display: inline-block;
+    /* border: 0.1vh solid red; */
+    text-align: left;
+    width: 70px;
+    padding-left: 10px;
+}
+
+.stats-card-img img{
+    /* background-image: url("../images/icons/Shape36.png"); */
+    width: 60px;
+    height: auto;
+    display: inline-block;
 }
 
 .stats-card-num {
-
-}
-
-.stats-card-text {
-
+    display: inline-block;
+    font-size: 30px;
+    width: 122px;
+    /* border: 0.1vh solid blue; */
+    font-family: 'Roboto-Medium';
+    text-align: right;
+    position: relative;
+    top: 22px;
 }
 
 .stats-card-percent {
+    /* border: 0.1vh solid green; */
+    display: inline-block;
+    width: 50px;
+    position: relative;
+    top: 22px;
+    right: 5px;
+    font-size: 12px;
+}
 
+.stats-card-arrow {
+    font-size: 14px;
 }
 
 .stats-card-percent-up {
-
+    color: #0ecd1f;
 }
 
 .stats-card-percent-down {
+    color: red;
+}
 
+.stats-card-num span {
+    font-size: 15px;
+}
+
+#stats-know-more {
+    margin-top: 20px;
+    text-align: right;
+    padding-right: 50px;
+}
+
+#stats-body2 {
+    /* border: 0.1vh solid red; */
+    margin-top: 50px;
+    text-align: center;
 }
 
 
 
+#stats-body2-head1 {
+    width: 44%;
+    display: inline-block;
+    font-family: 'Roboto-Bold';
+    text-align: left;
+}
 
+#stats-body2-head1 span {
+    display: block;
+    font-size: 10px;
+    text-align: left;
+    font-family: 'Roboto-Medium';
+}
+
+#stats-body2-head2 {
+    text-align: right;
+    /* border: 0.1vh solid green; */
+    display: inline-block;
+    width: 55%;
+    /* margin-right: 1px; */
+    position: relative;
+    bottom: 5px;
+    font-size: 10px;
+}
+
+#stats-body2-head2 span {
+    font-size: 10px;
+    font-family: 'Roboto-Bold';
+    display: inline-block;
+}
+
+#stats-body2-head21 {
+    display: inline-block;
+    background-color: rgb(190, 190, 190);
+    padding: 4px 0px;
+    border-radius: 5px;
+    /* font-size: 10px; */
+    margin-right: 15px;
+    padding-left: 3px;
+    /* padding-right: 10px; */
+    /* margin-bottom: 15px; */
+
+    color: white;
+}
+
+.stats-body2-head211{
+    border-radius: 5px;
+    padding: 2px 12px;
+    /* margin: 0 3px; */
+}
+
+#stats-body2-head211{
+    background-color: white;
+    color: black;
+}
+
+
+#stats-body2-head212 {
+    color: white; 
+}
+
+#curve_chart {
+    margin-left: 4%;
+}
+
+#donut-chart-div {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.donut_charts {
+    display: inline-block;
+    width: 150px;
+    height: 150px;
+}
+
+
+@media only screen and (min-width: 600px) {
+
+    #stats-body2 {
+        width: 85%;
+        margin-left: 12%;
+    }
+
+    .donut_charts {
+        width: 200px;
+        height: 200px;
+    }
+     
+
+}
+
+@media only screen and (min-width: 768px) {
+
+    #stats-body2 {
+        width: 90%;
+        margin-left: 8%;
+    }
+
+    .donut_charts {
+        width: 290px;
+        height: 290px;
+    }
+     
+
+}
+
+@media only screen and (min-width: 992px) {
+
+    #stats-body1 {
+        /* border: 0.1vh solid rgb(73, 0, 0); */
+        width: 77%;
+        /* position: absolute;
+        right: 0; */
+        margin-left: 15%;
+
+    }
+
+    #stats-body2-head1 {
+        font-size: 15px;
+    }
+
+}
 
 
 
