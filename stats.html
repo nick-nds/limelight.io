@@ -19,6 +19,17 @@
     <link rel="stylesheet" href="assets/fonts/fonts.css">
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
+<style>
+
+    #dashboard-section {
+        display: none;
+    }
+
+    #stats-section {
+        display: block;
+    }
+
+</style>
 <body>
     
     <header>
@@ -45,13 +56,13 @@
 
     <div id="sidebar">
         <ul>
-            <li onclick="window.location='index.html';" style="color: #45ea23;"><i class="fas fa-th-large" style="color: #45ea23;"></i><span class="sidebar-text">Dashboard</span></li>
+            <li onclick="window.location='index.html';"><i class="fas fa-th-large"></i><span class="sidebar-text">Dashboard</span></li>
             <li>
                 <i class="fas fa-video"></i>
                 <span class="sidebar-text">Stories</span>
             </li>
-            <li onclick="window.location='stats.html';">
-                <i class="fas fa-chart-line"></i>
+            <li onclick="window.location='stats.html';" style="color: #45ea23;">
+                <i class="fas fa-chart-line" style="color: #45ea23;"></i>
                 <span class="sidebar-text">Stats</span>
             </li>
             <li>
