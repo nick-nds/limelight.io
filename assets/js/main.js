@@ -22,7 +22,7 @@ $("#sidebar-arrow").click(function() {
         // $("sidebar").css('width', '10px');
 
         $("#sidebar-arrow").animate({
-            left: '+0px'
+            left: '0px'
         });
 
         // $("#sidebar-arrow").css({'transform' : 'rotate('+ 180 +'deg)'});
@@ -35,7 +35,7 @@ $("#sidebar-arrow").click(function() {
         // $("sidebar").css('width', '10px');
 
         $("#sidebar-arrow").animate({
-            left: '100px'
+            left: '75px'
         });
 
         // $("#sidebar-arrow").css({'transform' : 'rotate('+ 180 +'deg)'});
@@ -138,6 +138,18 @@ function drawRegionsMap() {
 
   chart.draw(data, options);
 }
+
+// function showSection(data) {
+
+//   var sections = document.getElementsByTagName("section");
+
+//   for(i=0; i<sections.length; i++) {
+//     sections[i].style.display = "none";
+//   }
+
+//   document.getElementById(data+"-section").style.display = "block";
+
+// }
 
 
 

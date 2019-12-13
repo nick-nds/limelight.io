@@ -67,7 +67,7 @@ header div{
 
 #header-logo div img{
     /* background-image: url("../images/logo.jpeg"); */
-    height: 50px;
+    height: 40px;
     width: auto;
     background-size: cover;
     margin: 5px 0px 0px 5px;
@@ -99,12 +99,22 @@ header div{
     top: 60px;
     right: 10px;
     height: auto;
+    padding-left: 40px;
+}
+
+/* #header-tooptip i {
+    margin: 0 10px;
+    color: green;
+} */
+
+#header-tooptip p {
     text-align: left;
 }
 
-#header-tooptip i {
-    margin: 0 10px;
-    color: green;
+#header-tooptip p img {
+    height: auto;
+    width: 15px;
+    margin-right: 10px;
 }
 
 .account-btn {
@@ -139,6 +149,40 @@ header div{
 
  }
 
+ @media only screen and (min-width: 992px) {
+
+    #header-tooptip {
+        display: block;
+        top: 20px;
+        background: none;
+        width: 400px;
+        /* border: 0.1vh solid red; */
+        padding: 0;
+        text-align: right;
+    }
+
+    #header-tooptip p {
+        display: inline-block;
+        margin: 10px 5px;
+    }
+
+    #header-tooptip p i {
+        color: #0ecd1f;
+        margin-left: 5px;
+    }
+
+    /* #header-tooptip p button {
+        margin: 10px 5px;
+        display: inline-block;
+    } */
+
+    #header-user {
+        display: none;
+    }
+
+ }
+
+
 
 /*============================================
 ==============================================
@@ -152,7 +196,7 @@ Sidebar
     position: absolute;
     left: 1px;
     top: 20%;
-    padding-right: 25px;
+    padding-right: 7px;
     z-index: 10;
     background-color: white;
 }
@@ -170,23 +214,34 @@ Sidebar
     cursor: pointer;
 }
 
+#sidebar li img {
+    height: auto;
+    width: 15px;
+    margin: 0 7px 0 5px;
+}
 
 
+/* 
 #sidebar li i {
-    margin: 0 15px 0 5px;
+    margin: 0 10px 0 5px;
     color: grey;
     width: 30px;
-}
+} */
 
 
 #sidebar-arrow {
     color: #0abb16;
+    /* background-image: linear-gradient(rgb(23, 139, 23), rgb(1, 206, 35)); */
     font-size: 25px;
     position: absolute;
     top: 40%;
-    right: -15px;
+    right: -40px;
     cursor: pointer;
+    /* padding: 0;
+    border: 0.1vh solid black;
+    display: inline-block; */
 }
+
 
 @media only screen and (min-width: 768px) {
 
@@ -213,7 +268,7 @@ Dashboard
 
 #dashboard-head {
     margin-top: 80px;
-    margin-left: 70px;
+    margin-left: 30px;
 }
 
 #dashboard-head1 {
@@ -224,6 +279,7 @@ Dashboard
 #dashboard-btn {
     font-size: 18px;
     padding: 7px 30px;
+    box-shadow: 1px 10px 12px 1px #c9c9c9;
 }
 
 
@@ -297,7 +353,7 @@ Stats
     width: 77%;
     /* position: absolute;
     right: 0; */
-    margin-left: 75px;
+    margin-left: 60px;
     font-family: 'Roboto-Bold';
     font-size: 15px;
 }
@@ -400,6 +456,11 @@ Stats
     margin-top: 20px;
     text-align: right;
     padding-right: 50px;
+}
+
+#stats-know-more button {
+    box-shadow: 1px 10px 12px 1px #c9c9c9;
+    background-image: linear-gradient(to right, rgb(23, 139, 23), rgb(1, 206, 35));
 }
 
 #stats-body2 {
